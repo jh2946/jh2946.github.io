@@ -1,0 +1,15 @@
+body, html {
+    margin: 0;
+}
+
+#cover-page {
+    height: calc(100vh - 50px);
+    background-image: url(library2.jpg);
+    color: #dfdfdf;
+}
+
+#cover-page-overlay {
+    height: 100%;
+    display: flex;
+    background-color: #0000005f;
+}

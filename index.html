@@ -3,9 +3,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <title>jh2946 Portfolio</title>
 </head>
 <body>
-    testing
+    <div id="cover-page">
+        <div id="cover-page-overlay">
+            <div id="cover-page-center">
+                <div id="cover-inner">
+                    <div class="cover-card">
+                        <div class="card-title" id="myself">
+                            <img src="pfp.png" class="pfp" /><h2>jh2946</h2>
+                        </div>
+                        <p>
+                            I'm Andrey, <span id="age"></span> this year, currently studying at Nanyang Polytechnic Common ICT Programme, Y1.
+                        </p>
+                        <p>
+                            I'm currently aiming for a career in the tech industry. Most of my experience thus far has been in mathematical modelling and simulations, web development, and a splash of competitive programming.
+                        </p>
+                    </div>
+                    <div class="cover-card" id="follow">
+                        <div class="card-title">
+                            <h3>Find me on:</h3>
+                        </div>
+                        <a href="https://github.com/jh2946/">
+                            <div class="find-button"
+                            id="github">
+                                <img src="github.svg" />
+                                <span>Github</span>
+                            </div>
+                        </a>
+                        <a href="https://app.studytogether.com/users/63e0e0b27eac1d134330d481">
+                            <div class="find-button"
+                            id="study">
+                                <img src="study.png" />
+                                <span>StudyTogether</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="cover-page-down">
+                <p>Scroll down</p>
+                <img src="down-arrow.svg" />
+            </div>
+        </div>
+    </div>
+    <div id="subject">
+        <div id="subject-inner">
+            <h1>My current progress</h1>
+            <p>These are the languages and frameworks I'm currently confident enough in to apply in practical situations:</p>
+            <div class="flexbox">
+                <div class="flex-card flex-card-blue">
+                    <div class="centerer"><h2>Intermediate</h2></div>
+                    <ul>
+                        <li>- Python</li>
+                        <li>- HTML, CSS, JS/TS</li>
+                    </ul>
+                </div>
+                <div class="flex-card">
+                    <div class="centerer"><h2>Beginner</h2></div>
+                    <ul>
+                        <li>- C++</li>
+                        <li>- Git</li>
+                        <li>- Bootstrap</li>
+                        <li>- MV2/3 extensions</li>
+                        <li>- PostgreSQL</li>
+                        <li>- NodeJS</li>
+                        <li>- Svelte, SvelteKit</li>
+                        <li>- ExpressJS</li>
+                        <li>- Prisma</li>
+                    </ul>
+                </div>
+            </div>
+            <p>These are some libraries I've found very useful, and to some extent would be able to apply them in future situations:</p>
+            <ul>
+                <li>- ChartJS</li>
+                <li>- Lucia-Auth</li>
+            </ul>
+        </div>
+
+    </div>
 </body>
 </html>
