@@ -1,5 +1,4 @@
 body, html {
-    font-family: "Open Sans", Verdana, Tahoma, sans-serif;
     margin: 0;
 }
 
@@ -8,6 +7,7 @@ a {
 }
 
 #cover-page {
+    font-family: "Open Sans", Verdana, Tahoma, sans-serif;
     min-height: 100vh;
     background-image: url(library.jpg);
     color: #efefef;
@@ -70,7 +70,7 @@ a {
     width: 32px;
     border-radius: 50%;
     margin-right: 16px;
-    border: 2px white solid;
+    border: 2px #efefef solid;
 }
 
 .find-button {
@@ -80,7 +80,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Open Sans", Verdana, Tahoma, sans-serif;
     font-size: 16px;
     font-weight: 700;
     height: 36px;
@@ -93,16 +92,16 @@ a {
     height: 16px;
     margin-right: 8px;
     border-radius: 50%;
-    border: 2px white solid;
-    background-color: white;
+    border: 2px #efefef solid;
+    background-color: #efefef;
 }
 
 #github {
-    background-color: #333
+    background-color: #333333
 }
 
 #study {
-    background: linear-gradient(180deg, #e53170, #ff8e3c);
+    background: linear-gradient(200deg, #e53170, #ff8e3c);
 }
 
 #cover-page-down {
@@ -117,12 +116,18 @@ a {
 }
 
 #subject {
-    padding: 48px 96px;
+    font-family: Cabin, Georgia, sans-serif;
+    color: #0f0f0f;
+    padding: 24px 96px 72px 96px;
 }
 
 #subject-inner {
     max-width: 800px;
     margin: auto;
+}
+
+#subject-inner h1 {
+    margin-top: 24px 0;
 }
 
 .flexbox {
@@ -132,7 +137,8 @@ a {
 }
 
 .flex-card {
-    padding: 24px;
+    padding-top: 48px;
+    padding-bottom: 24px;
     background: linear-gradient(190deg, #ffffff, #dfdfdf);
     border: 1px #7f7f7f solid;
     border-radius: 16px;
@@ -141,7 +147,6 @@ a {
 }
 
 .flex-card h2 {
-    font-weight: 400;
     margin: 0 0 24px 0;
 }
 
@@ -156,4 +161,60 @@ ul {
 
 .centerer {
     text-align: center;
+}
+
+.project {
+    border: 2px #0f0f0f solid;
+    border-radius: 2px;
+    padding: 24px 36px;
+    margin: 16px 0;
+}
+
+.project h2 {
+    margin: 8px 0;
+}
+
+.tag-list {
+    display: flex;
+    margin-top: 12px;
+}
+
+.tag-list > .tag {
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 9px;
+    border: 1px #7f7f7f solid;
+    padding: 2px 6px;
+    margin-right: 8px;
+}
+
+.indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    margin-right: 4px;
+}
+
+.idle .indicator {
+    background-color: #7f7f7f;
+}
+
+.active .indicator {
+    background-color: #3faf4f;
+}
+
+.btn {
+    padding: 8px;
+    margin-right: 8px;
+    color: #efefef;
+    border-radius: 5px;
+}
+
+.product {
+    background-color: green;
+}
+
+.source {
+    background-color: blue;
 }
