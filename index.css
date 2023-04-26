@@ -2,6 +2,12 @@ body, html {
     margin: 0;
 }
 
+@media (max-width: 767px) {
+    html {
+        font-size: 14px;
+    }
+}
+
 a {
     text-decoration: none;
 }
@@ -14,15 +20,17 @@ a {
 }
 
 #cover-page-overlay {
-    height: 100%;
+    min-height: 100vh;
     background-color: #0000005f;
 }
 
 #cover-page-center {
-    height: calc(100% - 72px);
+    min-height: calc(100vh - 72px);
     display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+#cover-inner {
+    margin: auto;
 }
 
 #cover-inner > * {
@@ -34,7 +42,7 @@ a {
     max-width: 300px;
     padding: 28px;
     border-radius: 16px;
-    margin: 32px;
+    margin: 72px 32px;
     background-color: #0000007f;
 }
 
@@ -44,13 +52,14 @@ a {
 
 .card-title {
     display: flex;
+    margin-bottom: 12px;
 }
 
 .card-title h2, img {
     justify-content: left;
-    height: 32px;
-    font-size: 32px;
-    line-height: 32px;
+    height: 2rem;
+    font-size: 2rem;
+    line-height: 2rem;
 }
 
 .card-title h3 {
@@ -61,15 +70,15 @@ a {
 }
 
 .cover-card p {
-    font-size: 16px;
-    line-height: 24px;
-    margin-top: 12px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 0.5rem;
 }
 
 .pfp {
-    width: 32px;
+    width: 2rem;
     border-radius: 50%;
-    margin-right: 16px;
+    margin-right: 1rem;
     border: 2px #efefef solid;
 }
 
@@ -118,7 +127,7 @@ a {
 #subject {
     font-family: Cabin, Georgia, sans-serif;
     color: #0f0f0f;
-    padding: 24px 96px 72px 96px;
+    padding: 24px 10vw 72px 10vw;
 }
 
 #subject-inner {
@@ -132,8 +141,13 @@ a {
 
 .flexbox {
     display: flex;
-    max-width: 600px;
     margin: auto;
+}
+
+@media (max-width: 767px) {
+    .flexbox {
+        display: block;
+    }
 }
 
 .flex-card {
@@ -142,7 +156,7 @@ a {
     background: linear-gradient(190deg, #ffffff, #dfdfdf);
     border: 1px #7f7f7f solid;
     border-radius: 16px;
-    margin: 24px;
+    margin: 48px 24px;
     flex: 1;
 }
 
@@ -206,9 +220,16 @@ ul {
 
 .btn {
     padding: 8px;
+    text-align: center;
     margin-right: 8px;
     color: #efefef;
     border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+    .btn {
+        margin: 12px 0 12px 0;
+    }
 }
 
 .product {
